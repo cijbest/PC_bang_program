@@ -37,14 +37,16 @@ public class ServerGui extends JFrame implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		String msg = jtf.getText()+"\n";
-		jta.append(msg);  /* 텍스트 영역 끝에 문자열을 추가 */
+		jta.append("서버 : " + msg);  /* 텍스트 영역 끝에 문자열을 추가 */
 		System.out.print(msg);
+		
+		server.sendMessage(msg);  /* 서버에게 클라이언트로 메세지 보내달라고 요청 */
 
 		jtf.setText("");  /* action이 끝난 후에 입력창 상태 설정 */
 		
 	}
 
-	public void appendMsg(String msg) {
+	public void appendMsg(String msg) {  // 서버가 읽어 온 메세지를 화면에 올림
 		jta.append(msg);
 		System.out.print("날아온 메세지 : " + msg);
 		
