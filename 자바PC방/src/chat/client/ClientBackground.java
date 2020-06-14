@@ -21,7 +21,7 @@ public class ClientBackground {
 	
 	public void connect() {
 		try {
-			socket = new Socket("127.0.0.1", 7777); /* 7777소켓을 쓰겠다 */
+			socket = new Socket("127.0.0.1", 7777);  /* 7777소켓을 쓰겠다 */
 			
 			System.out.println("서버 연결됨");
 			

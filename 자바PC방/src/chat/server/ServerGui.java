@@ -43,7 +43,6 @@ public class ServerGui extends JFrame implements ActionListener{
 		server.sendMessage(msg);  /* 서버에게 클라이언트로 메세지 보내달라고 요청 */
 
 		jtf.setText("");  /* action이 끝난 후에 입력창 상태 설정 */
-		
 	}
 
 	public void appendMsg(String msg) {  // 서버가 읽어 온 메세지를 화면에 올림

@@ -48,8 +48,7 @@ public class ServerBackground {
 				msg = in.readUTF();
 				gui.appendMsg(msg);
 			}
-			
-			
+					
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

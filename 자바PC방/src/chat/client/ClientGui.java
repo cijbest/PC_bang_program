@@ -45,7 +45,6 @@ public class ClientGui extends JFrame implements ActionListener{
 		client.sandMessage(msg); /* 클라이언트에게 서버로 메세지 보내달라고 요청 */
 		
 		jtf.setText("");
-		
 	}
 
 	public void appendMsg(String msg) {  // 클라이언트가 읽어 온 메세지를 화면에 올림
